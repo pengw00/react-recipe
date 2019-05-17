@@ -1,0 +1,277 @@
+html {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/lily-banse-365344-unsplash.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Lato", "Arial", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  color: white;
+  font-weight: 300;
+  margin-top: 40px;
+}
+
+p {
+  font-weight: 400;
+}
+
+.tile.recipeShow {
+  margin-top: 60px;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.App {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.App-header {
+  height: 90px;
+  padding: 20px;
+  color: white;
+  font-weight: 300;
+  font-size: 150%;
+  letter-spacing: 2px;
+}
+
+.App-title {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.recipesContainer {
+  margin-top: 20px;
+}
+
+.tile {
+  width: 40%;
+  margin: auto;
+  margin-top: 10px;
+  /* background: lightyellow; */
+  background-color: rgba(255, 255, 224, 0.70);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FFD700;
+  /* box-shadow: 5px 5px grey; */
+}
+
+.input {
+  border: 0;
+  background: none;
+  outline: none;
+  margin-top:10px;
+  width: 300px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.input:focus {
+  border: solid 1px white;
+}
+
+.w3-tag {
+  background: white;
+  color: #FF00FF;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FFD700;
+}
+
+/*BUTTONS*/
+
+.newRecipeButton {
+  background: green;
+  color: white;
+  font-size: 120%;
+  font-weight: 300;
+  cursor: pointer;
+  margin: 30px;
+  padding: 10px 30px;
+  letter-spacing: 0.7px;
+  border: none;
+  border-radius: 200px;
+  transition: background 0.2s;
+}
+
+.launchButton {
+  background: green;
+  color: white;
+  font-size: 120%;
+  text-decoration: none;
+  /* font-weight: bold; */
+  cursor: pointer;
+  margin: 30px 10px;
+  padding: 10px 30px;
+  border-radius: 200px;
+  /* box-shadow: 3px 3px grey; */
+  /*float: left;*/
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
+}
+
+.newRecipeButton:hover,
+.launchButton:hover {
+  background: #00b300;
+}
+
+.deleteButton {
+  visibility: hidden;
+  float: right;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: red;
+}
+
+.tile:hover .deleteButton {
+  visibility: visible;
+}
+
+.editButton {
+  visibility: hidden;
+  background: aqua;
+  float: left;
+  margin: 5px;
+  font-size: 15px;
+  font-family: sans-serif;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  transition: background 0.2s;
+}
+
+.tile:hover .editButton {
+  visibility: visible;
+}
+
+.editRecipeButton {
+  visibility: hidden;
+  background: aqua;
+  float: left;
+  margin: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  transition: background 0.2s;
+}
+
+.tile:hover .editRecipeButton {
+  visibility: visible;
+}
+
+.editButton:hover,
+.editRecipeButton:hover,
+.backToListButton:hover,
+.backFromNewToListButton:hover {
+  background: #cff;
+}
+
+.backToListButton {
+  visibility: hidden;
+  background: aqua;
+  float: right;
+  margin: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  transition: background 0.2s;
+}
+
+.tile:hover .backToListButton {
+  visibility: visible;
+}
+
+.backFromNewToListButton {
+  /*visibility: hidden;*/
+  background: aqua;
+  float: center;
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  padding: 5px 10px;
+  transition: background 0.2s;
+}
+
+.like {
+  background: #F0FFFF;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.like:hover {
+  background: #00CED1;
+}
+
+/*SEARCH FORM*/
+
+form.search input[type=text] {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  margin-bottom: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+form.search button {
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: background 0.2s;
+}
+
+/*#0000FF #2196F3 #0b7dda*/
+
+form.search button:hover {
+    background: #0000FF;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  /*display: table;*/
+}
